@@ -5,7 +5,30 @@ from PIL import ImageGrab
 import BattleGrid
 
 inBattle = False
+'''
+La detection de map fonctionne super bien avec ces themes la :
+=> https://www.dofus.com/fr/forum/1578-themes-interfaces/2291142-2-50-theme-darkopacity?sort=rate_D
 
+Certaines cases ne sont parfois pas reconnu, peut etre essayé de trouver un autre themes ?
+
+BATTLE TODO :
+- Pathfinding (afin de pouvoir se déplacer)
+- fichier qui stock les data du perso qu'on joue (afin d'etre generique)
+- LATER: Pouvoir stocker les datas des sort et intégrer un algo de ligne de vue (pas obligé)
+- Pouvoir passer son tour + mettre pret 
+- La detection de la map doit se faire apres avoir mis pret (ou bien trouver une solution autre)
+
+JOB TODO :
+- Pouvoir définir un path sur une grid GUI (représentant la map dofus)
+- Pouvoir donc solve ce path
+- Pouvoir définir les metier qu'on souhaite utiliser
+- La tranche de level autorisé (ressources a collect)
+- Pouvoir detecter quasi toutes les ressources et cliquer dessus avec un interval X
+- Géré les temps d'attente de maniere random entre X et Y
+
+AUTRE ?
+
+'''
 def InBattle():
     global inBattle
     inBattle = True if not inBattle else False
