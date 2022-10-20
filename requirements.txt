@@ -1,0 +1,7 @@
+pyautogui
+Pillow
+pyside2
+keyboard
+numpy
+opencv-python
+black
